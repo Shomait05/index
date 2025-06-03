@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Кофейня Заур - Контакты</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu" role="menubar" aria-label="Главное меню">
+        <li class="top" role="none">
+          <a href="index.html" role="menuitem" tabindex="0">Главная</a>
+        </li>
+        <li class="top dropdown" role="none" aria-haspopup="true" aria-expanded="false">
+          <a href="#" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Меню ▼</a>
+          <ul class="submenu" role="menu" aria-label="Подменю Меню">
+            <li role="none"><a href="menu.html#coffee" role="menuitem" tabindex="-1">Кофе</a></li>
+            <li role="none"><a href="menu.html#cakes" role="menuitem" tabindex="-1">Торты</a></li>
+            <li role="none"><a href="menu.html#pies" role="menuitem" tabindex="-1">Пироги</a></li>
+          </ul>
+        </li>
+        <li class="top" role="none">
+          <a href="contacts.html" role="menuitem" tabindex="0" aria-current="page">Контакты</a>
+        </li>
+        <li class="top" role="none" style="margin-left:auto;">
+          <button id="themeToggle" aria-label="Переключить тему" class="theme-toggle">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section animate-fadein" aria-label="Форма обратной связи">
+      <h2>Свяжитесь с нами</h2>
+      <p>Если у вас есть вопросы или вы хотите сделать заказ, заполните форму ниже или свяжитесь с нами по телефону или email.</p>
+
+      <form id="contactForm" novalidate>
+        <label for="name">Имя:</label><br />
+        <input type="text" id="name" name="name" required placeholder="Ваше имя" /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required placeholder="example@mail.com" /><br />
+
+        <label for="phone">Телефон (необязательно):</label><br />
+        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" pattern="^\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" /><br />
+
+        <label for="message">Сообщение:</label><br />
+        <textarea id="message" name="message" rows="5" required placeholder="Ваше сообщение"></textarea><br />
+
+        <button type="submit" class="btn" aria-label="Отправить сообщение">Отправить</button>
+      </form>
+      <p id="formMessage" aria-live="polite" class="form-message"></p>
+
+      <h3>Наш адрес</h3>
+      <p>г. Махачкала, ул. Примерная, 12</p>
+      <p>Телефон: +7 (123) 456-78-90</p>
+      <p>Email: zaur.coffee@example.com</p>
+
+      <div class="map-container" aria-label="Карта расположения кофейни">
+        <iframe 
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A0f5e4f4c2e0a1e9c6d6e6a2e8c7b1f8b6f2b6f8a2e6c6a2e8c7b1f8b6f2b6f8a&source=constructor" 
+          width="100%" height="300" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Кофейня Заур, Махачкала</p>
+  </footer>
+
+  <div id="customCursor"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
