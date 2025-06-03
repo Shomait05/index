@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Кофейня Заур - Меню</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu" role="menubar" aria-label="Главное меню">
+        <li class="top" role="none">
+          <a href="index.html" role="menuitem" tabindex="0">Главная</a>
+        </li>
+        <li class="top dropdown" role="none" aria-haspopup="true" aria-expanded="false">
+          <a href="#" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Меню ▼</a>
+          <ul class="submenu" role="menu" aria-label="Подменю Меню">
+            <li role="none"><a href="#coffee" role="menuitem" tabindex="-1">Кофе</a></li>
+            <li role="none"><a href="#cakes" role="menuitem" tabindex="-1">Торты</a></li>
+            <li role="none"><a href="#pies" role="menuitem" tabindex="-1">Пироги</a></li>
+          </ul>
+        </li>
+        <li class="top" role="none">
+          <a href="contacts.html" role="menuitem" tabindex="0">Контакты</a>
+        </li>
+        <li class="top" role="none" style="margin-left:auto;">
+          <button id="themeToggle" aria-label="Переключить тему" class="theme-toggle">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="coffee" class="menu-section animate-slidein-left" aria-label="Меню кофе">
+      <h2>Кофе</h2>
+      <p>Свежемолотый кофе из отборных зерен, приготовленный по классическим и авторским рецептам.</p>
+      <ul>
+        <li><strong>Эспрессо</strong> - крепкий и насыщенный, 100 ₽</li>
+        <li><strong>Американо</strong> - классический черный кофе, 120 ₽</li>
+        <li><strong>Капучино</strong> - с нежной молочной пенкой, 150 ₽</li>
+        <li><strong>Латте</strong> - мягкий и сливочный, 170 ₽</li>
+        <li><strong>Мокко</strong> - с шоколадным вкусом, 180 ₽</li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80" alt="Чашка кофе" class="responsive-img" />
+    </section>
+
+    <section id="cakes" class="menu-section animate-slidein-right" aria-label="Меню тортов">
+      <h2>Торты</h2>
+      <p>Домашние торты на заказ - идеальное решение для праздников и особых случаев.</p>
+      <ul>
+        <li><strong>Шоколадный торт</strong> - с орехами и ганашем, от 1200 ₽</li>
+        <li><strong>Медовик</strong> - классический медовый торт, от 1100 ₽</li>
+        <li><strong>Чизкейк</strong> - нежный и сливочный, от 1300 ₽</li>
+        <li><strong>Наполеон</strong> - слоёный торт с кремом, от 1250 ₽</li>
+        <li><strong>Фруктовый торт</strong> - с сезонными ягодами, от 1400 ₽</li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Торт шоколадный" class="responsive-img" />
+    </section>
+
+    <section id="pies" class="menu-section animate-slidein-left" aria-label="Меню пирогов">
+      <h2>Пироги</h2>
+      <p>Свежие пироги с разными начинками, приготовленные по семейным рецептам.</p>
+      <ul>
+        <li><strong>Яблочный пирог</strong> - с корицей и сахаром, от 800 ₽</li>
+        <li><strong>Вишнёвый пирог</strong> - с сочной начинкой, от 850 ₽</li>
+        <li><strong>Пирог с мясом</strong> - с ароматными специями, от 900 ₽</li>
+        <li><strong>Пирог с капустой</strong> - классический вкус, от 750 ₽</li>
+        <li><strong>Пирог с картошкой</strong> - с нежной начинкой, от 700 ₽</li>
+      </ul>
+      <img src="https://main-cdn.sbermegamarket.ru/big1/hlr-system/-52/989/442/332/215/42/100050027787b0.jpg" alt="Пирог с ягодами" class="responsive-img" />
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Кофейня Заур, Махачкала</p>
+  </footer>
+
+  <div id="customCursor"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
